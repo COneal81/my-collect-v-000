@@ -1,4 +1,5 @@
 def my_collect(collection)
+  i = 0
   new_collection = []
   collection.each do |language| 
     language.uppercase
@@ -7,3 +8,6 @@ end
 new_collection
 end
 
+ 
+  while i < collection.length 
+  new_collection << yield(collection[i])
